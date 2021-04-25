@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragment.LaporanFragment"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/semiblack">
+
+
+        <include layout="@layout/header_laporan"/>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Nama Lengkap : "
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle_greenlight"
+            android:backgroundTint="@color/dota"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Isi Laporan :"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_saran"
+            android:layout_width="330dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle_greenlight"
+            android:backgroundTint="@color/dota"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_kirim"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/shape_rectangle_greenlight"
+            android:backgroundTint="@color/zeus"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTintMode="src_in"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

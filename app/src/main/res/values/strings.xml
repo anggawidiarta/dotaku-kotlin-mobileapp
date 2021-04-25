@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dotaku</string>
+    <string name="dotaku">Dotaku</string>
+    <string name="kategori">Kategori</string>
+    <string name="my_profile">My Profile</string>
+    <string name="nama_profile">I Putu Angga Purnama Widiarta</string>
+    <string name="menu_kategori">Menu Kategori</string>
+</resources>
