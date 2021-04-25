@@ -11,10 +11,10 @@ import android.widget.TextView
 
 class LaporanTerkirimFragment : Fragment() {
     lateinit var tv_nama: TextView
-    lateinit var tv_saran: TextView
+    lateinit var tv_laporan: TextView
     lateinit var btn_back: Button
 
-    var saran: String? = null
+    var laporan: String? = null
 
     companion object {
         val EXTRA_NAME = "extra_name"
@@ -25,7 +25,7 @@ class LaporanTerkirimFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         tv_nama = view.findViewById(R.id.tv_nama) as TextView
-        tv_saran = view.findViewById(R.id.tv_saran) as TextView
+        tv_laporan = view.findViewById(R.id.tv_laporan) as TextView
         btn_back = view.findViewById(R.id.btn_back) as Button
 
         val laporanFragment = LaporanFragment()
@@ -44,13 +44,13 @@ class LaporanTerkirimFragment : Fragment() {
 
         if(savedInstanceState != null){
             val description = savedInstanceState.getString(EXTRA_SARAN)
-            saran = description
+            laporan = description
         }
 
         if(arguments != null){
             val name = arguments?.getString(EXTRA_NAME)
             tv_nama.text = name
-            tv_saran.text = saran
+            tv_laporan.text = laporan
         }
     }
 

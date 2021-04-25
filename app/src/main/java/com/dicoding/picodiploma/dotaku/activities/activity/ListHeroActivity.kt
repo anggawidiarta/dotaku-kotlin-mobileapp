@@ -46,7 +46,7 @@ class ListHeroActivity: AppCompatActivity() {
         }
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener{
-            view -> Snackbar.make(view, "Add Hero", Snackbar.LENGTH_LONG)
+            view -> Snackbar.make(view, "Add Strength Hero", Snackbar.LENGTH_LONG)
                 .setAction("ActionBegin", null).show()
         }
 

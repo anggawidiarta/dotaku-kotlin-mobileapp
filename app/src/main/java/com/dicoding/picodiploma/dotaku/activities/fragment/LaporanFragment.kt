@@ -22,7 +22,7 @@ class LaporanFragment: Fragment() {
 
         val btn_kirim = view.findViewById(R.id.btn_kirim) as Button
         val et_nama = view.findViewById(R.id.et_nama) as EditText
-        val et_saran = view.findViewById(R.id.et_saran) as EditText
+        val et_laporan = view.findViewById(R.id.et_laporan) as EditText
 
 
         val LaporanTerkirim = LaporanTerkirimFragment()
@@ -30,12 +30,12 @@ class LaporanFragment: Fragment() {
         btn_kirim.setOnClickListener {
 
             val bundle = Bundle()
-            bundle.putString(LaporanTerkirimFragment.EXTRA_NAME, "Terimakasih Atas Sarannya \n"+et_nama.text.toString())
+            bundle.putString(LaporanTerkirimFragment.EXTRA_NAME, "Thanks For The Information \n"+et_nama.text.toString())
 
-            val saran = "Ini Saran yang anda berikan : \n" + et_saran.text.toString()
+            val laporan = "The Information That You've Been Submitted : \n" + et_laporan.text.toString()
 
             LaporanTerkirim.arguments = bundle
-            LaporanTerkirim.saran = saran
+            LaporanTerkirim.laporan = laporan
 
             fragmentManager?.beginTransaction()?.apply {
                 replace(R.id.laporan, LaporanTerkirim, LaporanTerkirimFragment::class.java.simpleName)

@@ -51,7 +51,7 @@
             android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/et_saran"
+            android:id="@+id/et_laporan"
             android:layout_width="330dp"
             android:layout_height="75dp"
             android:layout_marginStart="35dp"

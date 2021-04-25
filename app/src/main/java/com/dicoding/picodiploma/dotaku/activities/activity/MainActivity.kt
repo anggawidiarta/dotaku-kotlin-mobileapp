@@ -17,7 +17,13 @@ class MainActivity : AppCompatActivity() {
         //val cvInt: CardView = findViewById(R.id.cv_int)
         val cvLap: CardView = findViewById(R.id.cv_laporan)
         val cvProf: CardView = findViewById(R.id.cv_profile)
+        val cvLor: CardView = findViewById(R.id.cv_lore)
 
+
+        cvLor.setOnClickListener {
+            val loreIntent = Intent(this@MainActivity, LoreActivity::class.java)
+            startActivity(loreIntent)
+        }
 
         cvStr.setOnClickListener {
             val strIntent = Intent(this@MainActivity, StrengthActivity::class.java)

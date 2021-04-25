@@ -10,7 +10,7 @@
         android:layout_height="250dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/dotabg"/>
+        android:src="@drawable/herodota"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,14 +49,15 @@
                             android:padding="10dp">
 
                             <TextView
+                                android:id="@+id/tv_item_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="130dp"
                                 android:layout_marginLeft="130dp"
                                 android:singleLine="true"
-                                android:text="DOTAKU"
+                                android:text="List Hero"
                                 android:textColor="@android:color/black"
-                                android:textSize="16dp"
+                                android:textSize="22dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
@@ -68,14 +69,19 @@
                             android:padding="10dp">
 
                             <TextView
-                                android:id="@+id/textView"
+                                android:id="@+id/tvDate"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@android:color/holo_blue_light"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
                                 android:textSize="12sp"
-                                android:textStyle="bold|italic"
-                                android:textColor="@color/black"
-                                android:text="Aplikasi Informasi Seputar DOTA 2" />
+                                android:textStyle="italic|bold"
+                                android:text="Berikut Adalah Daftar Hero : "/>
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -92,12 +98,10 @@
                 android:layout_marginLeft="30dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/img_item_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/dota"
-                    android:scaleType="centerCrop"
-                    android:padding="10dp" />
+                    android:scaleType="centerCrop"/>
 
             </androidx.cardview.widget.CardView>
 

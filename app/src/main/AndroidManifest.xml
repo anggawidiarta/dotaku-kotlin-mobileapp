@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dotaku">
-        <activity android:name=".activities.activity.StrengthActivity"></activity>
+        <activity android:name=".activities.activity.ListLore"></activity>
+        <activity android:name=".activities.activity.LoreActivity" />
+        <activity android:name=".activities.activity.StrengthActivity" />
         <activity android:name=".activities.activity.LaporanActivity" />
-        <activity android:name=".activities.activity.ListHeroActivity"/>
-        <activity android:name=".activities.activity.DetailHeroActivity"/>
+        <activity android:name=".activities.activity.ListHeroActivity" />
+        <activity android:name=".activities.activity.DetailHeroActivity" />
         <activity android:name=".activities.activity.ProfilActivity" />
         <activity android:name=".activities.activity.MainActivity">
             <intent-filter>

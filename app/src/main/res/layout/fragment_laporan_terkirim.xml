@@ -1,76 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="activities.fragment.LaporanTerkirimFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/dota_pic">
+        android:background="@drawable/dota_pic"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_laporan"/>
 
 
-        <TextView
-            android:id="@+id/textView5"
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
-            android:text="Submitted, Thanks For Your Information"
-            android:textColor="@color/dota"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp">
 
-        <TextView
-            android:id="@+id/tv_nama"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="192dp"
-            android:foregroundGravity="center"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="TextView"
-            android:textStyle="bold"
-            android:textColor="@color/dota"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.500"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Submitted, Thanks For Your Information"
+                android:textColor="@color/dota"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/tv_saran"
-            android:layout_width="300dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="92dp"
-            android:foregroundGravity="center"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="TextView"
-            android:textColor="@color/dota"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:textSize="14sp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:foregroundGravity="center"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textColor="@color/dota"
+                android:textStyle="bold|italic" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/tv_laporan"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:foregroundGravity="center"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textColor="@color/dota" />
+        </androidx.cardview.widget.CardView>
 
         <Button
-            android:backgroundTint="@color/zeus"
             android:id="@+id/btn_back"
+            android:layout_gravity="center"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="15dp"
             android:background="@drawable/shape_rectangle_green"
+            android:backgroundTint="@color/zeus"
             android:text="Kembali"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_saran" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textStyle="bold" />
 
-</FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
